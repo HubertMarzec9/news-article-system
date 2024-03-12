@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\AuthorApiController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $articles = Article::all();
+    return view('welcome', compact( 'articles'));
 });
+
+Route::get('/articles/create', [ArticleController::class, 'create'])->name('articles.create');
+Route::get('/articles/{id}/edit', [ArticleController::class, 'edit'])->name('articles.edit');
+Route::post('/articles', [ArticleController::class, 'store'])->name('articles.store');
+Route::put('/articles/{id}', [ArticleController::class, 'update'])->name('articles.update');
+
