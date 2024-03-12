@@ -66,7 +66,7 @@ To edit an existing news article, follow these steps:
 - Modify the article details as needed.
 - Click the "Update" button.
 
-To view a list of news articles, simply visit the homepage. You will see a list of articles with their titles and authors.
+To view a list of news articles, simply visit the homepage. You will see a list of articles.
 
 ## API Endpoints
 
