@@ -10,7 +10,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/your-username/news-article-system.git
+git clone https://github.com/HubertMarzec9/news-article-system.git
 
 2. Navigate to the project directory:
 
